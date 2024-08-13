@@ -187,7 +187,7 @@ app.use(audit({
         maxBodyLength: 50 // limit length to 50 chars + '...'
     },
     response: {
-        maskBody: [‘session_token’] // Mask 'session_token' field in response body
+        maskBody: [‘session_token’], // Mask 'session_token' field in response body
         excludeHeaders: [‘*’], // Exclude all headers from responses,
         excludeBody: [‘*’], // Exclude all body from responses
         maskHeaders: [‘header1’], // Mask 'header1' header in incoming requests
